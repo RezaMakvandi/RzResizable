@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "rz-resizable": {
+      "projectType": "library",
+      "root": "projects/rz-resizable",
+      "sourceRoot": "projects/rz-resizable/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/rz-resizable/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/rz-resizable/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/rz-resizable/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/rz-resizable/src/test.ts",
+            "tsConfig": "projects/rz-resizable/tsconfig.spec.json",
+            "karmaConfig": "projects/rz-resizable/karma.conf.js"
+          }
+        }
+      }
+    }
+    
   }
 }
