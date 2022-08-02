@@ -1,24 +1,32 @@
 # RzResizable
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+Resizable directive for Angular 14+  
+To resize any element
 
-## Code scaffolding
+# Install
 
-Run `ng generate component component-name --project rz-resizable` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project rz-resizable`.
-> Note: Don't forget to add `--project rz-resizable` or else it will be added to the default project in your `angular.json` file. 
+```
+npm install rz-resizable 
+```
+After install, import RzResizableModule in your app.module.ts file
 
-## Build
+```javascript
+{
+...
+import { RzResizableModule } from 'rz-resizable';
+  
+  @NgModule({
+  imports: [
+    RzResizableModule
+  ],
+  ...
+})
 
-Run `ng build rz-resizable` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+How it works:
 
-## Publishing
+```html
+<div style="width:300px; height:100px; background-color:#c8f7fd" RzResizable></div>
+```    
 
-After building your library with `ng build rz-resizable`, go to the dist folder `cd dist/rz-resizable` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test rz-resizable` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![alt text](https://github.com/RezaMakvandi/RzResizable/blob/master/projects/rz-resizable/demo.png?raw=true)                                     |
