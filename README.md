@@ -29,4 +29,4 @@ How it works:
 <div style="width:300px; height:100px; background-color:#c8f7fd" RzResizable></div>
 ```    
 
-![alt text](https://github.com/RezaMakvandi/RzResizable/tree/master/projects/rz-resizable/demo.png?raw=true)                                     |
+![alt text](https://github.com/RezaMakvandi/RzResizable/blob/master/projects/rz-resizable/demo.png?raw=true)                                     |
